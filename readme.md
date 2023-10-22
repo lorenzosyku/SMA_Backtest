@@ -12,14 +12,17 @@ This Python code defines a `SMABacktester` class that can be used for backtestin
    import numpy as np
    import matplotlib.pyplot as plt
 
+   ```
+
 2. Define an instance of the SMABacktester class with the following parameters:
-symbol: The stock symbol for which you want to perform the SMA backtest.
-SMA_S: The short-term Simple Moving Average period.
-SMA_L: The long-term Simple Moving Average period.
-start: The start date for historical data retrieval.
-end: The end date for historical data retrieval.
+   symbol: The stock symbol for which you want to perform the SMA backtest.
+   SMA_S: The short-term Simple Moving Average period.
+   SMA_L: The long-term Simple Moving Average period.
+   start: The start date for historical data retrieval.
+   end: The end date for historical data retrieval.
 
 # Example:
+
 backtester = SMABacktester("AAPL", 50, 200, "2020-01-01", "2021-12-31")
 
 3. Use the following methods of the SMABacktester class:
@@ -30,13 +33,9 @@ test_results(): Backtests the trading strategy using historical data. It calcula
 
 plot_results(): Visualizes the backtesting results by plotting the returns of the strategy and the buy and hold strategy in a single graph.
 
-
 # Example:
+
 backtester = SMABacktester("AAPL", 50, 200, "2020-01-01", "2021-12-31")
 backtester.get_data()
 backtester.test_results()
 backtester.plot_results()
-
-
-
-
